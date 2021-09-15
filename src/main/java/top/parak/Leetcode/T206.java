@@ -2,18 +2,13 @@ package top.parak.Leetcode;
 
 /**
  * @author KHighness
- * @date 2020/10/1 17:18
+ * @since 2020-10-01
  * @apiNote 206. 反转链表
  */
 
-import java.util.List;
-
-/**
- * Problem:
- * 反转一个单链表。
- */
 public class T206 {
-    //Definition for singly-linked list.
+
+    // Definition for singly-linked list.
     public class ListNode {
         int val;
         ListNode next;
@@ -33,7 +28,7 @@ public class T206 {
         return reverseHead.next;
     }
 
-    // 转向阀
+    // 转向法
     public ListNode reverseList2(ListNode head) {
         ListNode prev = null;
         ListNode curr = head;

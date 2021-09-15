@@ -5,12 +5,6 @@ package top.parak.Leetcode;
  * @since 2021-05-13
  * @apiNote 111. 二叉树的最小深度
  */
-
-/**
- * Problem:
- * 给定一个二叉树，找出其最小深度。
- * 最小深度是从根节点到最近叶子节点的最短路径上的节点数量。
- */
 public class T111 {
 
     // Definition for a binary tree node.
@@ -44,4 +38,5 @@ public class T111 {
         }
         return root.left != null ? dfs(root.left, cur + 1, min) : dfs(root.right, cur + 1, min);
     }
+
 }

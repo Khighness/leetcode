@@ -5,21 +5,12 @@ package top.parak.Leetcode;
  * @since 2021-05-28
  * @apiNote 79. 单词搜索
  */
-
-import java.util.Deque;
-import java.util.LinkedList;
-
-/**
- * Problem:
- * 给定一个 m x n 二维字符网格 board 和一个字符串单词 word 。如果 word 存在于网格中，返回 true ；否则，返回 false 。
- * 单词必须按照字母顺序，通过相邻的单元格内的字母构成，其中“相邻”单元格是那些水平相邻或垂直相邻的单元格。同一个单元格内的字母不允许被重复使用。
- */
 public class T79 {
-    int[][] dirs = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
-    int row, col, len;
-    char[][] board;
-    char[] arr;
-    boolean[][] visit;
+    private int[][] dirs = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+    private int row, col, len;
+    private char[][] board;
+    private char[] arr;
+    private boolean[][] visit;
 
     /**
      * DFS入口：遍历board，找到与word第一个字符相同的元素(i, j)

@@ -4,10 +4,9 @@ import java.util.*;
 
 /**
  * @author KHighness
- * @date 2020/9/27 22:28
+ * @since 2020-09-27
  * @apiNote 图的创建
  */
-
 public class GraphDemo {
 
     private ArrayList<String> vertexList; // 存储顶点集合

@@ -7,7 +7,6 @@ import java.util.Scanner;
  * @author KHighness
  * @since 2021-05-31
  */
-
 public class T1 {
 
     private static char[] arr;

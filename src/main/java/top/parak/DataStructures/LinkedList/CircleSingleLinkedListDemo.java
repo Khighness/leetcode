@@ -2,7 +2,7 @@ package top.parak.DataStructures.LinkedList;
 
 /**
  * @author KHighness
- * @date 2020/8/28 14:55
+ * @since 2020-08-28
  * @apiNote 环形单向链表->约瑟夫问题
  */
 
@@ -12,6 +12,8 @@ package top.parak.DataStructures.LinkedList;
  * 从1开始报数，数到m个那个人出列，它的下一位又从1开始报数，疏导m的那
  * 个人又出列，依次类推，直到所有的人出列为止，由此产生一个出队编号的序列
  */
+
+import top.parak.Leetcode.Offer62;
 
 /**
  * Boy结点
@@ -46,7 +48,7 @@ class Boy {
  */
 class CircleSingleLinkedList {
     // 创建first结点，当前没有编号
-    private Boy fisrt = new Boy(-1);
+    private Boy fisrt = null;
 
     /**
      * 添加结点

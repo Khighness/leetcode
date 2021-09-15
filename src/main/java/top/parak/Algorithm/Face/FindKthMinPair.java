@@ -10,7 +10,6 @@ import java.util.Comparator;
  * 数值对(X, Y)的比较规则，先比较X，再比较Y。
  * 给定一个数组arr和正数k，返回第k小的数值对。
  */
-
 public class FindKthMinPair {
 
     public class Pair {

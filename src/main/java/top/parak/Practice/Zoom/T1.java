@@ -5,9 +5,7 @@ import java.util.Scanner;
 /**
  * @author KHighness
  * @since 2021-04-01
- * @apiNote 2021 ZOOM tT1
  */
-
 public class T1 {
 
     // accddeffss

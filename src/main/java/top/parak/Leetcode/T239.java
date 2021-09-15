@@ -1,27 +1,15 @@
 package top.parak.Leetcode;
 
-/**
- * <p> Project: Algorithm </P>
- * <p> Package: top.parak.Leetcode </p>
- * <p> FileName: T239 <p>
- * <p> Description: 239. 滑动窗口最大值 <p>
- * <p> Created By IntelliJ IDEA </p>
- *
- * @author KHighness
- * @since 2020/11/9
- */
-
-import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.LinkedList;
 
 /**
- * Problem:
- * 给定一个数组 nums，有一个大小为 k 的滑动窗口从数组的最左侧移动到数组的最右侧。
- * 你只可以看到在滑动窗口内的 k 个数字。滑动窗口每次只向右移动一位。
- * 返回滑动窗口中的最大值。
+ * @author KHighness
+ * @since 2020-11-09
+ * @apiNote 239. 滑动窗口最大值
  */
 public class T239 {
+
     public int[] maxSlidingWindow(int[] nums, int k) {
         /* 结果索引 */
         int maxIndex = 0;
@@ -59,4 +47,5 @@ public class T239 {
         }
         return maxArry;
     }
+
 }

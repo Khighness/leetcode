@@ -6,10 +6,9 @@ import java.util.Collections;
 
 /**
  * @author KHighness
- * @date 2020/3/11 10:51
+ * @since 2020-03-11
  * @apiNote 桶排序
  */
-
 public class BucketSort {
 
     public static void sort(int[] arr) {

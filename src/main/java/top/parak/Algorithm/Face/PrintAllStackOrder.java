@@ -9,7 +9,6 @@ import java.util.Stack;
  * @since 2021-05-22
  * @apiNote 出栈顺序
  */
-
 public class PrintAllStackOrder {
 
     public static List<List<Character>> solution(char[] arr) {

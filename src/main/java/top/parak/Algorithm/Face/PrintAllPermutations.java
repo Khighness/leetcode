@@ -5,10 +5,9 @@ import java.util.List;
 
 /**
  * @author KHighness
- * @since 2021/3/15
+ * @since 2021-03-15
  * @apiNote 打印一个字符串的全排列
  */
-
 public class PrintAllPermutations {
 
     public List<String> permutation(String s) {

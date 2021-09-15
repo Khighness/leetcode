@@ -4,10 +4,9 @@ import java.util.Scanner;
 
 /**
  * @author KHighness
- * @date 2020/8/27 13:12
+ * @since 2020-08-27
  * @apiNote 循环队列
  */
-
 class CircleQueue {
 
     private int maxSize;  // 队列的最大容量（因为有一个预留空间，最大容量为masSize-1）

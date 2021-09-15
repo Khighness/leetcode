@@ -1,20 +1,9 @@
 package top.parak.Leetcode;
 
 /**
- * <p> Project: Algorithm </P>
- * <p> Package: top.parak.Leetcode </p>
- * <p> FileName: T13 <p>
- * <p> Description:  <p>
- * <p> Created By IntelliJ IDEA </p>
- *
  * @author KHighness
- * @since 2020/11/27
+ * @since 2020-11-27
  * @apiNote 13. 罗马数字转整数
- */
-
-/**
- * Problem:
- * 罗马数字字符串转整数
  */
 public class T13 {
     public int romanToInt(String s) {

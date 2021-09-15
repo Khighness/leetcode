@@ -2,13 +2,11 @@ package top.parak.DataStructures.Stack;
 
 /**
  * @author KHighness
- * @date 2020/8/28 17:18
+ * @since 2020-08-28
  * @apiNote 链表实现栈
  */
 
-/**
- * 定义节点
- */
+// 定义节点
 class HeroNode {
     public int no;
     public String data;

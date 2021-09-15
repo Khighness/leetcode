@@ -1,19 +1,13 @@
 package top.parak.Leetcode;
 
-/**
- * @author KHighness
- * @since 2020/11/27
- * @apiNote 15. 三数之和
- */
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 /**
- * Problem:
- * 给你一个包含 n 个整数的数组 nums，判断 nums 中是否存在三个元素 a，b，c ，使得 a + b + c = 0 ？请你找出所有满足条件且不重复的三元组。
- * 注意：答案中不可以包含重复的三元组。
+ * @author KHighness
+ * @since 2020-11-27
+ * @apiNote 15. 三数之和
  */
 public class T15 {
     public List<List<Integer>> threeSum(int[] nums) {
@@ -33,8 +27,10 @@ public class T15 {
                     l++;
                     r--;
                 }
-                else if (sum < 0) l++;
-                else if (sum > 0) r--;
+                else if (sum < 0)
+                    l++;
+                else
+                    r--;
             }
         }
         return ans;

@@ -2,15 +2,11 @@ package top.parak.Leetcode;
 
 /**
  * @author KHighness
- * @since 2020/11/15
+ * @since 2020-11-15
  * @apiNote 643. 子数组最大平均数 I
  */
-
-/**
- * Problem:
- * 给定 n 个整数，找出平均数最大且长度为 k 的连续子数组，并输出该最大平均数。
- */
 public class T643 {
+
     public double findMaxAverage(int[] nums, int k) {
         double sum = 0;
         for (int i = 0; i < k; i++) {
@@ -24,4 +20,5 @@ public class T643 {
         }
         return max / k;
     }
+
 }

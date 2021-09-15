@@ -1,18 +1,11 @@
 package top.parak.Leetcode;
 
-/**
- * @author KHighness
- * @date 2020/9/23 14:41
- * @apiNote 1365. 有多少小于当前数字的数字
- */
-
 import java.util.*;
 
 /**
- * Problem:
- * 给你一个数组 nums，对于其中每个元素 nums[i]，请你统计数组中比它小的所有数字的数目。
- * 换而言之，对于每个 nums[i] 你必须计算出有效的 j 的数量，其中 j 满足 j != i 且 nums[j] < nums[i] 。
- * 以数组形式返回答案。
+ * @author KHighness
+ * @since 2020-09-23
+ * @apiNote 1365. 有多少小于当前数字的数字
  */
 public class T1365 {
 
@@ -55,9 +48,5 @@ public class T1365 {
             for (int i : valueIndex.get(sortedArr[si])) res[i] = si;
         }
         return res;
-    }
-
-    public static void main(String[] args) {
-        Arrays.stream(new T1365().hashSolution(new int[]{7, 7, 7, 7})).forEach(System.out::println);
     }
 }

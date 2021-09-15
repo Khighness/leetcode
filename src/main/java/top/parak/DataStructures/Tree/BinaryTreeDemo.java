@@ -4,10 +4,9 @@ import java.util.*;
 
 /**
  * @author KHighness
- * @date 2020/9/30 11:03
+ * @since 2020-09-30
  * @apiNote 二叉树
  */
-
 class HeroNode {
 
     public int no;

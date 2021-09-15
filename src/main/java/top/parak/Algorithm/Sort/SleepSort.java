@@ -3,7 +3,7 @@ package top.parak.Algorithm.Sort;
 
 /**
  * @author KHighness
- * @date 2020/9/21 14:09
+ * @since 2020-09-21
  * @apiNote 睡眠排序
  */
 

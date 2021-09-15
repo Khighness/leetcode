@@ -1,13 +1,10 @@
 package top.parak.Algorithm.Sort;
 
-import java.util.Arrays;
-
 /**
  * @author KHighness
- * @date 2021/3/5 15:31
+ * @since 2021-03-05
  * @apiNote 归并排序
  */
-
 public class MergeSort {
 
     public static void sort(int[] array) {

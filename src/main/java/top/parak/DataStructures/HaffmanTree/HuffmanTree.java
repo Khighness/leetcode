@@ -6,37 +6,36 @@ import java.util.List;
 
 /**
  * @author KHighness
- * @date 2021/3/12 5:20
+ * @since 2021-03-12
  * @apiNote 哈夫曼树
  */
-
-class Node implements Comparable<Node> {
-    /* 结点权值 */
-    int value;
-    /* 左子结点 */
-    Node left;
-    /* 右子结点 */
-    Node right;
-
-    public Node(int value) {
-        this.value = value;
-    }
-
-    @Override
-    public String toString() {
-        return "[" +
-                "value=" + value +
-                ']';
-    }
-
-    @Override
-    public int compareTo(Node o) {
-        // 从小到大
-        return this.value - o.value;
-    }
-}
-
 public class HuffmanTree {
+
+    static class Node implements Comparable<Node> {
+        /* 结点权值 */
+        int value;
+        /* 左子结点 */
+        Node left;
+        /* 右子结点 */
+        Node right;
+
+        public Node(int value) {
+            this.value = value;
+        }
+
+        @Override
+        public String toString() {
+            return "[" +
+                    "value=" + value +
+                    ']';
+        }
+
+        @Override
+        public int compareTo(Node o) {
+            // 从小到大
+            return this.value - o.value;
+        }
+    }
 
     public static void main(String[] args) {
         int[] array = {13, 7,8, 3, 29, 6, 1};
@@ -72,5 +71,4 @@ public class HuffmanTree {
         }
         return nodes.get(0);
     }
-
 }

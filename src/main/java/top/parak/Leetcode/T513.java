@@ -5,11 +5,6 @@ package top.parak.Leetcode;
  * @since 2021-05-14
  * @apiNote 513. 找树左下角的值
  */
-
-/**
- * Problem:
- * 给定一个二叉树，在树的最后一行找到最左边的值。
- */
 public class T513 {
 
     // Definition for a binary tree node.
@@ -36,4 +31,5 @@ public class T513 {
         dfs(root.left, depth + 1);
         dfs(root.right, depth + 1);
     }
+
 }

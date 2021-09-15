@@ -1,9 +1,9 @@
 package top.parak.Algorithm.Game;
 
 /**
- * @author: KHighness
- * @date: 2020/10/3 15:57
- * @apiNote: 尼姆博弈
+ * @author KHighness
+ * @since 2020-10-03
+ * @apiNote 尼姆博弈
  */
 
 public class NimGame {

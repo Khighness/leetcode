@@ -2,10 +2,9 @@ package top.parak.Algorithm.Game;
 
 /**
  * @author KHighness
- * @date 2020/10/3 22:15
+ * @since 2020-10-03
  * @apiNote 斐波那契博弈
  */
-
 public class FibonacciGame {
     public int fibnacci(int n) {
         // 递归计算，慢

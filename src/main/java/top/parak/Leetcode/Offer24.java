@@ -2,14 +2,8 @@ package top.parak.Leetcode;
 
 /**
  * @author KHighness
- * @date 2020/9/28 23:21
+ * @since 2020-09-28
  * @apiNote 剑指 Offer 24. 反转链表
- */
-
-/**
- * Problem:
- * 定义一个函数，输入一个链表的头节点，
- * 反转该链表并输出反转后链表的头节点。
  */
 public class Offer24 {
 

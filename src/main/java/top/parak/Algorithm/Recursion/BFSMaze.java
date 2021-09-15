@@ -6,8 +6,8 @@ import java.util.LinkedList;
 /**
  * @author KHighness
  * @since 2021-05-14
+ * @apiNote BFS迷宫问题
  */
-
 public class BFSMaze {
     static class Node {
         int x;

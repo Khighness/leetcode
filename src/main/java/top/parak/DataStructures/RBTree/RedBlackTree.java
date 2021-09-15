@@ -6,14 +6,9 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 
 /**
- * <p> Project: Algorithm </P>
- * <p> Package: top.parak.DataStructures.RBTree </p>
- * <p> FileName: RBTree <p>
- * <p> Description: 红黑树 <p>
- * <p> Created By IntelliJ IDEA </p>
- *
  * @author KHighness
- * @since 2020/11/5
+ * @since 2020-11-05
+ * @apiNote 红黑树
  */
 
 /* 红黑颜色 */
@@ -48,10 +43,7 @@ class RBTNode<T extends Comparable<T>, D> {
     }
 
     public RBTColor getColor() {
-        if (this != null) {
-            return color;
-        }
-        return null;
+        return color;
     }
 
     public void setColor(RBTColor color) {

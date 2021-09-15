@@ -1,13 +1,13 @@
 package top.parak.Algorithm.Sort;
 
 import java.util.Arrays;
+import java.util.Stack;
 
 /**
  * @author KHighness
- * @date 2021/3/5 12:30
+ * @since 2021-03-05
  * @apiNote 快速排序
  */
-
 public class QuickSort {
     public static void sort(int[] array) {
         sort(array, 0, array.length - 1);
@@ -44,6 +44,47 @@ public class QuickSort {
         sort(array, left, r - 1);
         //递归排序右半数组
         sort(array, r + 1, right);
+    }
+
+    public static void sort2(int[] arr, int l, int r) {
+        Stack<Integer> stack = new Stack<>();
+        stack.push(l);
+        stack.push(r);
+        int pivot;
+        while (!stack.isEmpty()) {
+            // 弹
+            r = stack.pop();
+            l = stack.pop();
+            pivot = partition(arr, l, r);
+            if (l < pivot - 1) {
+                stack.push(l);
+                stack.push(pivot - 1);
+            }
+            if (pivot + 1 < r) {
+                stack.push(pivot + 1);
+                stack.push(r);
+            }
+        }
+    }
+
+    private static int partition(int[] arr, int l, int r) {
+        // 中间轴
+        int pivot = arr[l];
+        while (l < r) {
+            while (l < r && arr[r] >= pivot) r--;
+            arr[l] = arr[r];
+            while (l < r && arr[l] <= pivot) l++;
+            arr[r] = arr[l];
+        }
+        // 起始交换
+        arr[l] = pivot;
+        return l;
+    }
+
+    private static void swap(int[] arr, int a, int b) {
+        int tmp = arr[a];
+        arr[a] = arr[b];
+        arr[b] = tmp;
     }
 
     private static void test(int n) {

@@ -1,17 +1,12 @@
 package top.parak.Leetcode;
 
-/**
- * @author KHighness
- * @since 2021-05-11
- * @apiNote 401. 二进制手表
- */
-
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Problem:
- * https://leetcode-cn.com/problems/binary-watch/
+ * @author KHighness
+ * @since 2021-05-11
+ * @apiNote 401. 二进制手表
  */
 public class T401 {
     List<String> res;

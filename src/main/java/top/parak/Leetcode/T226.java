@@ -2,15 +2,8 @@ package top.parak.Leetcode;
 
 /**
  * @author KHighness
- * @since 2020/11/27
+ * @since 2020-11-27
  * @apiNote 226. 翻转二叉树
- */
-
-import javax.swing.tree.TreeNode;
-
-/**
- * Problem:
- * 翻转一棵二叉树。
  */
 public class T226 {
 

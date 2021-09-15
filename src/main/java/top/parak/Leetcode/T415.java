@@ -5,12 +5,8 @@ package top.parak.Leetcode;
  * @since 2021-06-16
  * @apiNote 415. 字符串相加
  */
-
-/**
- * Problem:
- * 给定两个字符串形式的非负整数 num1 和num2 ，计算它们的和。
- */
 public class T415 {
+
     public String addStrings(String num1, String num2) {
         StringBuilder ans = new StringBuilder();
         char[] arr1 = num1.toCharArray();
@@ -24,4 +20,5 @@ public class T415 {
         if (next != 0) ans.append(next);
         return ans.reverse().toString();
     }
+
 }

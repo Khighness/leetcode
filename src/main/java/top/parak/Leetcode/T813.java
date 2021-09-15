@@ -5,15 +5,8 @@ package top.parak.Leetcode;
  * @since 2021-05-27
  * @apiNote 813. 最大平均值和的分组
  */
-
-import java.util.UUID;
-
-/**
- * Problem:
- * 我们将给定的数组 A 分成 K 个相邻的非空子数组 ，我们的分数由每个子数组内的平均值的总和构成。计算我们所能得到的最大分数是多少。
- * 注意我们必须使用 A 数组中的每一个数进行分组，并且分数不一定需要是整数。
- */
 public class T813 {
+
     /**
      * 动态规划
      * dp[i][k]前i个元素包含分成k份，所能得到的最大分数
@@ -39,4 +32,5 @@ public class T813 {
         }
         return dp[len][k];
     }
+
 }

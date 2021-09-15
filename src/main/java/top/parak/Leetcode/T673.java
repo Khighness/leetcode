@@ -1,18 +1,14 @@
 package top.parak.Leetcode;
 
+import java.util.Arrays;
+
 /**
  * @author KHighness
  * @since 2021-05-25
  * @apiNote 673. 最长递增子序列的个数
  */
-
-import java.util.Arrays;
-
-/**
- * Problem:
- * 给定一个未排序的整数数组，找到最长递增子序列的个数。
- */
 public class T673 {
+
     /**
      * dp[i]表示以nums[i]结尾的最长递增子序列
      * count[i]表示以nums[i]结尾的最长递增子序列的组合数量
@@ -46,4 +42,5 @@ public class T673 {
         }
         return ans;
     }
+
 }

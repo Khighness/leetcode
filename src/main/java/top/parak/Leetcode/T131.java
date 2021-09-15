@@ -1,25 +1,20 @@
 package top.parak.Leetcode;
 
-/**
- * @author KHighness
- * @since 2021-05-28
- * @apiNote 131. 分割回文串
- */
-
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Problem:
- * 给你一个字符串 s，请你将 s 分割成一些子串，使每个子串都是 回文串 。返回 s 所有可能的分割方案。
+ * @author KHighness
+ * @since 2021-05-28
+ * @apiNote 131. 分割回文串
  */
 public class T131 {
-    Deque<String> cur = new LinkedList<>();
-    List<List<String>> res = new ArrayList<>();
-    char[] arr;
-    int len;
+    private Deque<String> cur = new LinkedList<>();
+    private List<List<String>> res = new ArrayList<>();
+    private char[] arr;
+    private int len;
 
     public List<List<String>> partition(String s) {
         arr = s.toCharArray();
@@ -28,7 +23,13 @@ public class T131 {
         return res;
     }
 
-    private void dfs(String s,  int index) {
+    /**
+     * 回溯
+     *
+     * @param s     字符串
+     * @param index 决策位
+     */
+    private void dfs(String s, int index) {
         if (index == len) {
             res.add(new ArrayList<>(cur));
             return;

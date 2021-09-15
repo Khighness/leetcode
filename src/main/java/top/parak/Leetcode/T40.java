@@ -1,17 +1,11 @@
 package top.parak.Leetcode;
 
+import java.util.*;
+
 /**
  * @author KHighness
  * @since 2021-05-22
  * @apiNote 40. 组合总和 II
- */
-
-import java.util.*;
-
-/**
- * Problem:
- * 给定一个数组 candidates 和一个目标数 target ，找出 candidates 中所有可以使数字和为 target 的组合。
- * candidates 中的每个数字在每个组合中只能使用一次。
  */
 public class T40 {
     List<List<Integer>> res = new ArrayList<>();

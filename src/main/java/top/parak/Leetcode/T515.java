@@ -1,19 +1,14 @@
 package top.parak.Leetcode;
 
-/**
- * @author KHighness
- * @since 2021-05-21
- * @apiNote 515. 在每个树行中找最大值
- */
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
 /**
- * Problem:
- * 您需要在二叉树的每一行中找到最大的值。
+ * @author KHighness
+ * @since 2021-05-21
+ * @apiNote 515. 在每个树行中找最大值
  */
 public class T515 {
 

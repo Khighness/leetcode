@@ -3,9 +3,8 @@ package top.parak.Algorithm.Dynamic;
 /**
  * @author KHighness
  * @since 2021-03-17
- * @apiNote [4/9].二维费用背包
+ * @apiNote 二维费用背包
  */
-
 public class TwoDimensionalExpenseKnapsack {
 
     /**

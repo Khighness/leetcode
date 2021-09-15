@@ -9,7 +9,6 @@ import java.util.Set;
  * @apiNote 对于两个字符串，所含有的字符种类完全一样，就将两个字符串算作一类。
  * 输入一批字符串(只包含小写字母)，求字符串出现的种类。
  */
-
 public class HowManyTypes {
 
     /**

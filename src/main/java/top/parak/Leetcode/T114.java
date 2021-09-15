@@ -1,21 +1,13 @@
 package top.parak.Leetcode;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+
 /**
  * @author KHighness
  * @since 2021-05-14
  * @apiNote 114. 二叉树展开为链表
- */
-
-import javax.swing.tree.TreeNode;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
-import java.util.TreeMap;
-
-/**
- * 给你二叉树的根结点 root ，请你将它展开为一个单链表：
- * 展开后的单链表应该同样使用 TreeNode ，其中 right 子指针指向链表中下一个结点，而左子指针始终为 null 。
- * 展开后的单链表应该与二叉树 先序遍历 顺序相同。
  */
 public class T114 {
 
@@ -56,7 +48,9 @@ public class T114 {
      */
     public void flatten2(TreeNode root) {
         while (root != null) {
-            if (root.left != null) {
+            if (root.left == null) {
+                root = root.right;
+            } else {
                 TreeNode prev = root.left;
                 while (prev.right != null) {
                     prev = prev.right;
@@ -65,7 +59,6 @@ public class T114 {
                 root.right = root.left;
                 root.left = null;
             }
-            root = root.right;
         }
     }
 }

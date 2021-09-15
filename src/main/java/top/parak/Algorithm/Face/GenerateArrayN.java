@@ -8,7 +8,6 @@ import java.util.Arrays;
  * @apiNote 输入一个int类型的值N，构造一个长度为N的数组arr并满足要求：
  * 对任意i < k < j，都满足arr[i] + arr[j] != 2 * arr[k]。
  */
-
 public class GenerateArrayN {
 
     public int[] generate1(int size) {

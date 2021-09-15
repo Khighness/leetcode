@@ -1,9 +1,9 @@
 package top.parak.Algorithm.Game;
 
 /**
- * @author: KHighness
- * @date: 2020/10/3 20:49
- * @apiNote: 威佐夫博弈
+ * @author KHighness
+ * @since 2020-10-03
+ * @apiNote 威佐夫博弈
  */
 
 public class WizovGame {

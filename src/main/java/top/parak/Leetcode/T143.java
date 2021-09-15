@@ -1,20 +1,13 @@
 package top.parak.Leetcode;
 
-/**
- * @author KHighness
- * @since 2020/12/1
- * @apiNote 143. 重排链表
- */
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 /**
- * Problem:
- * 给定一个单链表 L：L0→L1→…→Ln-1→Ln ，
- * 将其重新排列后变为： L0→Ln→L1→Ln-1→L2→Ln-2→…
- * 你不能只是单纯的改变节点内部的值，而是需要实际的进行节点交换。
+ * @author KHighness
+ * @since 2020-12-01
+ * @apiNote 143. 重排链表
  */
 public class T143 {
 
@@ -33,7 +26,7 @@ public class T143 {
             map.put(index++, temp);
             temp = temp.next;
         }
-        ListNode tempI, tempII, tempIII, tempIIII;
+        ListNode tempI, tempII, tempIII;
         for (int i = 0; i <= index / 2 - 1; i++) {
             // 第i个结点
             tempI = map.get(i);

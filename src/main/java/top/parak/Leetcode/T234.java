@@ -1,17 +1,12 @@
 package top.parak.Leetcode;
 
-/**
- * @author KHighness
- * @since 2020/12/1
- * @apiNote 234. 回文链表
- */
-
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Problem:
- * 请判断一个链表是否为回文链表。
+ * @author KHighness
+ * @since 2020-12-01
+ * @apiNote 234. 回文链表
  */
 public class T234 {
 
@@ -22,11 +17,6 @@ public class T234 {
         ListNode(int x) { val = x; }
     }
 
-    /**
-     * <p>转数组</p>
-     * @param head
-     * @return
-     */
     public boolean isPalindrome(ListNode head) {
         if (head == null || head.next == null) {
             return true;
@@ -45,11 +35,6 @@ public class T234 {
         return true;
     }
 
-    /**
-     * <p>递归</p>
-     * @param head
-     * @return
-     */
     private ListNode frontPointer;
     public boolean solution1(ListNode head) {
         frontPointer = head;

@@ -1,17 +1,10 @@
 package top.parak.Algorithm.Recursion;
 
-import org.w3c.dom.Node;
-
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.Queue;
-
 /**
  * @author KHighness
- * @date 2020/8/29 8:45
+ * @since 2020-08-29
  * @apiNote 迷宫问题
  */
-
 public class Maze {
 
     /**

@@ -6,7 +6,6 @@ import java.util.*;
  * @author KHighness
  * @since 2021-05-27
  */
-
 public class T3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

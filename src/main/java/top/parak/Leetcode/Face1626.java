@@ -1,18 +1,11 @@
 package top.parak.Leetcode;
 
+import java.util.Stack;
+
 /**
  * @author KHighness
  * @since 2021-05-29
  * @apiNote 面试题 16.26. 计算器
- */
-
-import java.util.Stack;
-import java.util.UUID;
-
-/**
- * Problem:
- * 给定一个包含正整数、加(+)、减(-)、乘(*)、除(/)的算数表达式(括号除外)，计算其结果。
- * 表达式仅包含非负整数，+， - ，*，/ 四种运算符和空格  。 整数除法仅保留整数部分。
  */
 public class Face1626 {
     public int calculate(String s) {

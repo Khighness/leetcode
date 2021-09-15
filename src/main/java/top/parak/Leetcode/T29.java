@@ -2,16 +2,8 @@ package top.parak.Leetcode;
 
 /**
  * @author KHighness
- * @since 2020/11/28
+ * @since 2020-11-28
  * @apiNote 29. 两数相除
- */
-
-import java.math.BigDecimal;
-
-/**
- * Problem:
- * 给定两个整数，被除数 dividend 和除数 divisor。将两数相除，要求不使用乘法、除法和 mod 运算符。
- * 返回被除数 dividend 除以除数 divisor 得到的商。
  */
 public class T29 {
     public int divide(int dividend, int divisor) {

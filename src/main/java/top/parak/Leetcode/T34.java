@@ -2,16 +2,8 @@ package top.parak.Leetcode;
 
 /**
  * @author KHighness
- * @since 2020/12/1
+ * @since 2020-12-01
  * @apiNote 34. 在排序数组中查找元素的第一个和最后一个位置
- */
-
-import java.util.Arrays;
-
-/**
- * Problem:
- * 给定一个按照升序排列的整数数组 nums，和一个目标值 target。找出给定目标值在数组中的开始位置和结束位置。
- * 如果数组中不存在目标值 target，返回 [-1, -1]。
  */
 public class T34 {
 
@@ -49,6 +41,44 @@ public class T34 {
             right++;
         }
         return new int[]{++left, --right};
+    }
+
+    public int[] searchRange2(int[] nums, int target) {
+        int l = getLeftBorder(nums, target);
+        int r = getRightBorder(nums, target);
+        if (l == -2 || r == -2) return new int[] {-1, -1};
+        if (r - l > 1) return new int[] {l + 1, r - 1};
+        return new int[] {-1, -1};
+    }
+
+    private int getLeftBorder(int[] nums, int target) {
+        int l = 0, r = nums.length - 1;
+        int leftBorder = -2;
+        while (l <= r) {
+            int m = l + ((r - l) >> 1);
+            if (nums[m] >= target) {
+                r = m - 1;
+                leftBorder = r;
+            } else {
+                l = m + 1;
+            }
+        }
+        return leftBorder;
+    }
+
+    private int getRightBorder(int[] nums, int target) {
+        int l = 0, r = nums.length - 1;
+        int rightBorder = -2;
+        while (l <= r) {
+            int m = l + ((r - l) >> 1);
+            if (nums[m] > target) {
+                r = m - 1;
+            } else {
+                l = m + 1;
+                rightBorder = l;
+            }
+        }
+        return rightBorder;
     }
 
 }

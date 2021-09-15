@@ -1,25 +1,18 @@
 package top.parak.Leetcode;
 
-/**
- * @author KHighness
- * @since 2020/11/25
- * @apiNote 169. 多数元素
- */
-
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Problem:
- * 给定一个大小为 n 的数组，找到其中的多数元素。多数元素是指在数组中出现次数大于 ⌊ n/2 ⌋ 的元素。
- * 你可以假设数组是非空的，并且给定的数组总是存在多数元素。
+ * @author KHighness
+ * @since 2020-11-25
+ * @apiNote 169. 多数元素
  */
 public class T169 {
+
     /**
-     * <p>哈希计数</p>
-     * @param nums
-     * @return
+     * 哈希计数
      */
     public int majorityElement(int[] nums) {
         Map<Integer, Integer> map = new HashMap<>();
@@ -35,9 +28,7 @@ public class T169 {
     }
 
     /**
-     * <p>排序</p>
-     * @param nums
-     * @return
+     * 排序
      */
     public int solution2(int[] nums) {
         Arrays.sort(nums);
@@ -45,9 +36,7 @@ public class T169 {
     }
 
     /**
-     * <p>摩尔投票法</p>
-     * @param nums
-     * @return
+     * 摩尔投票法
      */
     public int solution3(int[] nums) {
         int ans = nums[0], times = 1;
@@ -64,4 +53,5 @@ public class T169 {
         }
         return ans;
     }
+
 }

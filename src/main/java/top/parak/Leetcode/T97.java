@@ -5,11 +5,6 @@ package top.parak.Leetcode;
  * @since 2021-05-13
  * @apiNote 97. 交错字符串
  */
-
-/**
- * Problem:
- * 给定三个字符串 s1、s2、s3，请你帮忙验证 s3 是否是由 s1 和 s2 交错 组成的。
- */
 public class T97 {
     /**
      * 动态规划

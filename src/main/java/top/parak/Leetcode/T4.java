@@ -2,17 +2,9 @@ package top.parak.Leetcode;
 
 /**
  * @author KHighness
- * @date 2020/9/19 21:27
+ * @since 2020-09-19
  * @apiNote 4. 寻找两个正序数组的中位数
  */
-
-/**
- * Problem:
- * 给定两个大小为 m 和 n 的正序（从小到大）数组 nums1 和 nums2。
- * 请你找出这两个正序数组的中位数，并且要求算法的时间复杂度为 O(log(m + n))。
- * 你可以假设 nums1 和 nums2 不会同时为空。
- */
-
 public class T4 {
 
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
@@ -20,12 +12,10 @@ public class T4 {
         int totalLength = length1 + length2;
         if (totalLength % 2 == 1) {
             int midIndex = totalLength / 2;
-            double median = getKthElement(nums1, nums2, midIndex + 1);
-            return median;
+            return getKthElement(nums1, nums2, midIndex + 1);
         } else {
             int midIndex1 = totalLength / 2 - 1, midIndex2 = totalLength / 2;
-            double median = (getKthElement(nums1, nums2, midIndex1 + 1) + getKthElement(nums1, nums2, midIndex2 + 1)) / 2.0;
-            return median;
+            return (getKthElement(nums1, nums2, midIndex1 + 1) + getKthElement(nums1, nums2, midIndex2 + 1)) / 2.0;
         }
     }
 

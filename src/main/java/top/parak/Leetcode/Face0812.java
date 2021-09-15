@@ -1,16 +1,58 @@
 package top.parak.Leetcode;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author KHighness
  * @since 2021-05-11
  * @apiNote 面试题 08.12. 八皇后
  */
-
-/**
- * 设计一种算法，打印 N 皇后在 N × N 棋盘上的各种摆法，其中每个皇后都不同行、不同列，也不在对角线上。
- * 这里的“对角线”指的是所有的对角线，不只是平分整个棋盘的那两条对角线。
- */
 public class Face0812 {
+    int n;
+    int[] arr;
+    List<List<String>> res;
 
+    public List<List<String>> solveNQueens(int n) {
+        this.n = n;
+        this.arr = new int[n];
+        this.res = new ArrayList<>();
+        process(0);
+        return res;
+    }
+
+    private void process(int index) {
+        if (index == n) {
+            place();
+        } else {
+            for (int i = 0; i < n; i++) {
+                arr[index] = i;
+                if (check(index)) {
+                    process(index + 1);
+                }
+            }
+        }
+    }
+
+    private boolean check(int index) {
+        for (int i = 0; i < index; i++) {
+            if (arr[i] == arr[index] || Math.abs(index - i) == Math.abs(arr[index] - arr[i])) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private void place() {
+        List<String> list = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            StringBuilder sb = new StringBuilder();
+            for (int k = 0; k < arr[i]; k++) sb.append('.');
+            sb.append('Q');
+            for (int k = arr[i] + 1; k < n; k++) sb.append('.');
+            list.add(sb.toString());
+        }
+        res.add(list);
+    }
 
 }

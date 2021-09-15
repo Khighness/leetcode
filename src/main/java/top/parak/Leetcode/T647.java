@@ -5,12 +5,8 @@ package top.parak.Leetcode;
  * @since 2021-05-13
  * @apiNote 647. 回文子串
  */
-
-/**
- * Problem:
- * 给定一个字符串，你的任务是计算这个字符串中有多少个回文子串。
- */
 public class T647 {
+
     /**
      * 动态规划
      * dp[i][j]表示字符串[i-j]位置是否为回文
@@ -41,4 +37,5 @@ public class T647 {
         }
         return ans;
     }
+
 }

@@ -5,11 +5,6 @@ package top.parak.Leetcode;
  * @since 2021-05-09
  * @apiNote 50. Pow(x, n)
  */
-
-/**
- * Problem:
- * 实现 pow(x, n) ，即计算 x 的 n 次幂函数（即，xn）。
- */
 public class T50 {
     public double myPow(double x, int n) {
         if (x == 0.0f) {

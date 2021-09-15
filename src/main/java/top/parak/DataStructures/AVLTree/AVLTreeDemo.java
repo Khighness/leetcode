@@ -3,16 +3,10 @@ package top.parak.DataStructures.AVLTree;
 import java.util.*;
 
 /**
- * <p> Project: Algorithm </P>
- * <p> Package: top.parak.DataStructures.Avl </p>
- * <p> FileName: AVLTree <p>
- * <p> Description: ALV树 <p>
- * <p> Created By IntelliJ IDEA </p>
- *
  * @author KHighness
- * @since 2021/3/15
+ * @since 2021-03-15
+ * @apiNote ALV树
  */
-
 class AVLNode {
     int value;
     AVLNode left;

@@ -1,20 +1,16 @@
 package top.parak.Leetcode;
 
-/**
- * @author KHighness
- * @since 2021-04-28
- * @apiNote 剑指 Offer 32 - II. 从上到下打印二叉树 II
- */
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
 /**
- * Problem:
- * 从上到下按层打印二叉树，同一层的节点按从左到右的顺序打印，每一层打印到一行。
+ * @author KHighness
+ * @since 2021-04-28
+ * @apiNote 剑指 Offer 32 - II. 从上到下打印二叉树 II
  */
+
 public class Offer32_2 {
 
     // Definition for a binary tree node.

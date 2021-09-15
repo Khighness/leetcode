@@ -1,16 +1,11 @@
 package top.parak.Leetcode;
 
-/**
- * @author KHighness
- * @date 2020/10/1 16:13
- * @apiNote 面试题 03.04. 化栈为队
- */
-
 import java.util.Stack;
 
 /**
- * Problem:
- * 实现一个MyQueue类，该类用两个栈来实现一个队列。
+ * @author KHighness
+ * @since 2020-10-01
+ * @apiNote 面试题 03.04. 化栈为队
  */
 public class Face0304 {
     class MyQueue {

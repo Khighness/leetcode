@@ -5,11 +5,9 @@ import java.util.List;
 
 /**
  * @author KHighness
- * @date 2021/3/11 16:31
+ * @since 2021-03-11
  * @apiNote 二分查找
  */
-
-// 二分查找要求数组必须是有序的
 public class BinarySearch {
 
     /**

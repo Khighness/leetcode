@@ -2,26 +2,17 @@ package top.parak.Leetcode;
 
 /**
  * @author KHighness
- * @since 2020/11/10
+ * @since 2020-11-10
  * @apiNote 258. 各位相加
  */
-
-/**
- * Problem:
- * 给定一个非负整数 num，反复将各个位上的数字相加，直到结果为一位数。
- */
-
 public class T258 {
-
 
     public int addDigits(int num) {
         return solution(num);
     }
 
     /**
-     * 递归解法
-     * @param num
-     * @return
+     * 递归解
      */
     public int solution(int num) {
         if (num < 10) return num;
@@ -34,9 +25,7 @@ public class T258 {
     }
 
     /**
-     * O(1)解法
-     * @param num
-     * @return
+     * O(1)
      */
     public int solution2(int num) {
         return (num - 1) % 9 + 1;

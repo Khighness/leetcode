@@ -7,9 +7,8 @@ import java.util.Stack;
 /**
  * @author KHighness
  * @since 2021-05-29
- * @apiNote
+ * @apiNote 772. 基本计算器 III
  */
-
 public class T772 {
     /** 优先级 */
     Map<Character, Integer> map = new HashMap<Character, Integer>() {{
@@ -78,10 +77,6 @@ public class T772 {
             case '%': ans = num1 % num2; break;
         }
         numberStack.push(ans);
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new T772().process("(111+222)/3"));
     }
 
 }

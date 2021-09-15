@@ -2,13 +2,8 @@ package top.parak.Leetcode;
 
 /**
  * @author KHighness
- * @date 2020/9/25 21:17
+ * @since 2020-09-25
  * @apiNote 面试题 04.02. 最小高度树
- */
-
-/**
- * Problem:
- * 给定一个有序整数数组，元素各不相同且按升序排列，编写一个算法，创建一棵高度最小的二叉搜索树。
  */
 public class Face0402 {
 

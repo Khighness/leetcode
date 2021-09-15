@@ -4,10 +4,9 @@ import java.util.Arrays;
 
 /**
  * @author KHighness
- * @date 2020/8/29 17:13
+ * @since 2020-08-29
  * @apiNote 插入排序
  */
-
 public class InsertSort {
 
     /**

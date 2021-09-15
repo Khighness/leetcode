@@ -4,10 +4,9 @@ import java.util.Arrays;
 
 /**
  * @author KHighness
- * @date 2021/3/11 14:14
+ * @since 2021-03-11
  * @apiNote 基数排序
  */
-
 public class RadisSort {
 
     public static void sort(int[] array) {

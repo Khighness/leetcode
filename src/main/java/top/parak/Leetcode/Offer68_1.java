@@ -5,11 +5,6 @@ package top.parak.Leetcode;
  * @since 2021-05-10
  * @apiNote 剑指 Offer 68 - I. 二叉搜索树的最近公共祖先
  */
-
-/**
- * Problem:
- * 给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。
- */
 public class Offer68_1 {
 
     // Definition for a binary tree node.
@@ -27,4 +22,5 @@ public class Offer68_1 {
             return lowestCommonAncestor(root.left, p, q);
         return root;
     }
+
 }

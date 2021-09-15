@@ -5,12 +5,8 @@ package top.parak.Leetcode;
  * @since 2021-06-16
  * @apiNote 831. 隐藏个人信息
  */
-
-/**
- * Problem:
- * 给你一条个人信息字符串 S，它可能是一个 邮箱地址 ，也可能是一串 电话号码 。
- */
 public class T831 {
+
     public String maskPII(String s) {
         char[] arr = s.toCharArray();
         int index = s.indexOf('@');
@@ -42,4 +38,5 @@ public class T831 {
             return ans.append("-***-***-").append(ansStr.substring(len - 4)).toString();
         }
     }
+
 }

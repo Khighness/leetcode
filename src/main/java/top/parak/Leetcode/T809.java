@@ -8,8 +8,8 @@ import java.util.List;
  * @since 2021-06-16
  * @apiNote 809. 情感丰富的文字
  */
-
 public class T809 {
+
     public int expressiveWords(String s, String[] words) {
         List<Object[]> target = wordAndCount(s);
         int ans = 0;
@@ -47,4 +47,5 @@ public class T809 {
         }
         return list;
     }
+
 }

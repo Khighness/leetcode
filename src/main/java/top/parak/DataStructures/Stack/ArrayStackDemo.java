@@ -4,13 +4,11 @@ import java.util.Scanner;
 
 /**
  * @author KHighness
- * @date 2020/8/28 16:51
+ * @since 2020-08-28
  * @apiNote 数组实现栈
  */
 
-/**
- * 定义栈
- */
+// 定义栈
 class ArrayStack {
 
     private int maxSize;  // 栈的大小

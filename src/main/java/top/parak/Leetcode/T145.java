@@ -1,17 +1,12 @@
 package top.parak.Leetcode;
 
-/**
- * @author KHighness
- * @date 2020/9/29 20:53
- * @apiNote 145. 二叉树的后序遍历
- */
-
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Problem:
- * 给定一个二叉树，返回它的 后序 遍历。
+ * @author KHighness
+ * @since 2020-09-29
+ * @apiNote 145. 二叉树的后序遍历
  */
 public class T145 {
 

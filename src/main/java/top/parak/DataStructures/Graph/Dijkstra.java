@@ -9,7 +9,6 @@ import java.util.Scanner;
  * @since 2021-05-20
  * @apiNote 单源最短路径Dijkstra算法
  */
-
 public class Dijkstra {
     /**
      * 防止两个MAX_VALUE相加栈溢出

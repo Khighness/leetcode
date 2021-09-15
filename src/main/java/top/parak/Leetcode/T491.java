@@ -10,11 +10,6 @@ import java.util.Set;
  * @since 2021-05-17
  * @apiNote 491. 递增子序列
  */
-
-/**
- * Problem:
- * 给定一个整型数组, 你的任务是找到所有该数组的递增子序列，递增子序列的长度至少是 2 。
- */
 public class T491 {
     List<List<Integer>> res = new ArrayList<>();
 

@@ -2,17 +2,12 @@ package top.parak.Leetcode;
 
 /**
  * @author KHighness
- * @date 2020/10/2 1:24
+ * @since 2020-10-02
  * @apiNote 876. 链表的中间结点
  */
-
-/**
- * Problem:
- * 给定一个带有头结点 head 的非空单链表，返回链表的中间结点。
- * 如果有两个中间结点，则返回第二个中间结点。
- */
 public class T876 {
-    //Definition for singly-linked list.
+
+    // Definition for singly-linked list.
     public class ListNode {
         int val;
         ListNode next;
@@ -35,4 +30,5 @@ public class T876 {
         }
         return temp;
     }
+
 }

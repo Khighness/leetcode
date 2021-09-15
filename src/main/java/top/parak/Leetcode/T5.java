@@ -2,13 +2,8 @@ package top.parak.Leetcode;
 
 /**
  * @author KHighness
- * @date 2020/9/21 22:31
+ * @since 2020-09-21
  * @apiNote 5. 最长回文子串
- */
-
-/**
- * Problem:
- * 给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000。
  */
 public class T5 {
 
@@ -75,10 +70,6 @@ public class T5 {
             len = 1;
         }
         return s.substring(start, start + max);
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new T5().longestPalindrome2("aaaaa"));
     }
 
 }

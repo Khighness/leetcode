@@ -1,19 +1,14 @@
 package top.parak.Leetcode;
 
-/**
- * @author KHighness
- * @since 2021-05-14
- * @apiNote 113. 路径总和 II
- */
-
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Problem:
- * 给你二叉树的根节点 root 和一个整数目标和 targetSum ，找出所有 从根节点到叶子节点 路径总和等于给定目标和的路径。
+ * @author KHighness
+ * @since 2021-05-14
+ * @apiNote 113. 路径总和 II
  */
 public class T113 {
 

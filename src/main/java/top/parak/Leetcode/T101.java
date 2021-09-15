@@ -5,11 +5,6 @@ package top.parak.Leetcode;
  * @since 2021-05-10
  * @apiNote 101. 对称二叉树
  */
-
-/**
- * Problem:
- * 给定一个二叉树，检查它是否是镜像对称的。
- */
 public class T101 {
     // Definition for a binary tree node.
     class TreeNode {

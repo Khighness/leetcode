@@ -2,13 +2,11 @@ package top.parak.DataStructures.LinkedList;
 
 /**
  * @author KHighness
- * @date 2020/8/28 10:29
+ * @since 2020-08-28
  * @apiNote 双向链表
  */
 
-/**
- * 定义结点
- */
+// 定义结点
 class  HeroNode2 {
     public int no;
     public String name;
@@ -32,9 +30,7 @@ class  HeroNode2 {
     }
 }
 
-/**
- * 定义双向链表
- */
+// 定义双向链表
 class DoubleLinkedList {
 
     // 初始化一个头结点

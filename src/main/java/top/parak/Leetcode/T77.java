@@ -1,16 +1,11 @@
 package top.parak.Leetcode;
 
+import java.util.*;
+
 /**
  * @author KHighness
  * @since 2021-05-22
  * @apiNote 77. 组合
- */
-
-import java.util.*;
-
-/**
- * Problem:
- * 给定两个整数 n 和 k，返回 1 ... n 中所有可能的 k 个数的组合。
  */
 public class T77 {
     List<List<Integer>> res = new ArrayList<>();

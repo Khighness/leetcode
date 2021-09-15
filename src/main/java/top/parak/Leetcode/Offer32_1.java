@@ -7,12 +7,7 @@ import java.util.Queue;
 /**
  * @author KHighness
  * @since 2021-04-28
- * @apiNote
- */
-
-/**
- * Problem:
- * 从上到下打印出二叉树的每个节点，同一层的节点按照从左到右的顺序打印。
+ * @apiNote 剑指 Offer 32 - I. 从上到下打印二叉树
  */
 public class Offer32_1 {
 

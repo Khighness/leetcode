@@ -2,19 +2,13 @@ package top.parak.Leetcode;
 
 /**
  * @author KHighness
- * @since 2020/11/30
+ * @since 2020-11-30
  * @apiNote 剑指 Offer 18. 删除链表的节点
- */
-
-/**
- * Problem:
- * 给定单向链表的头指针和一个要删除的节点的值，定义一个函数删除该节点。
- * 返回删除后的链表的头节点。
  */
 public class Offer18 {
 
     // Definition for singly-linked list.
-    public class ListNode {
+    private class ListNode {
         int val;
         ListNode next;
         ListNode(int x) { val = x; }

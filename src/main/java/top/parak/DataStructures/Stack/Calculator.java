@@ -2,13 +2,11 @@ package top.parak.DataStructures.Stack;
 
 /**
  * @author KHighness
- * @date 2020/8/28 20:27
+ * @since 2020-08-28
  * @apiNote 计算器
  */
 
-/**
- * 定义栈
- */
+// 定义栈
 class Stack {
 
     private int maxSize;  // 栈的大小

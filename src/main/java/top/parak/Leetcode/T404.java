@@ -2,13 +2,8 @@ package top.parak.Leetcode;
 
 /**
  * @author KHighness
- * @date 2020/9/19 0:42
+ * @since 2020-09-19
  * @apiNote 404. 左叶子之和
- */
-
-/**
- * Problem:
- * 计算给定二叉树的所有左叶子之和
  */
 public class T404 {
 

@@ -2,16 +2,11 @@ package top.parak.Leetcode;
 
 /**
  * @author KHighness
- * @date 2020/10/1 15:50
+ * @since 2020-10-01
  * @apiNote 977. 有序数组的平方
  */
-
-/**
- * Problem:
- * 给定一个按非递减顺序排序的整数数组 A，
- * 返回每个数字的平方组成的新数组，要求也按非递减顺序排序。
- */
 public class T977 {
+
     public int[] sortedSquares(int[] A) {
         for (int i = 0; i < A.length; i++) {
             A[i] *= A[i];
@@ -31,4 +26,5 @@ public class T977 {
             array[insertIndex + 1] = insertValue;
         }
     }
+
 }

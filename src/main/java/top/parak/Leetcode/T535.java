@@ -5,10 +5,9 @@ import java.util.Map;
 
 /**
  * @author KHighness
- * @since 2020/12/2
+ * @since 2020-12-02
  * @apiNote 535. TinyURL 的加密与解密
  */
-
 public class T535 {
 
     private Map<String, String> map = new HashMap<>();
@@ -23,4 +22,5 @@ public class T535 {
     public String decode(String shortUrl) {
         return map.get(shortUrl);
     }
+
 }

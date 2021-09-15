@@ -5,7 +5,6 @@ package top.parak.Algorithm.Dynamic;
  * @since 2021-03-29
  * @apiNote KMP
  */
-
 public class KnuthMorrisPratt {
 
     private String pat;

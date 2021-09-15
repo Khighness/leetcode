@@ -2,13 +2,8 @@ package top.parak.Leetcode;
 
 /**
  * @author KHighness
- * @since 2020/11/14
+ * @since 2020-11-14
  * @apiNote 334. 递增的三元子序列
- */
-
-/**
- * Problem:
- * 给定一个未排序的数组，判断这个数组中是否存在长度为 3 的递增子序列。
  */
 public class T334 {
     public boolean increasingTriplet(int[] nums) {

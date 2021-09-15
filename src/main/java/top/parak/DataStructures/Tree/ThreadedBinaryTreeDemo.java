@@ -5,16 +5,10 @@ import java.util.List;
 import java.util.Stack;
 
 /**
- * <p> Project: Algorithm </P>
- * <p> Package: top.parak.DataStructures.Tree </p>
- * <p> FileName: ThreadedBinaryTreeDemo <p>
- * <p> Description: 线索化二叉树 <p>
- * <p> Created By IntelliJ IDEA </p>
- *
  * @author KHighness
- * @since 2020/10/25
+ * @since 2020-10-25
+ * @apiNote 线索化二叉树
  */
-
 public class ThreadedBinaryTreeDemo {
     public static void main(String[] args) {
         ThreadedBinaryTree threadedBinaryTree = new ThreadedBinaryTree();

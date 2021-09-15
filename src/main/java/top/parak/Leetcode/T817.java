@@ -1,20 +1,13 @@
 package top.parak.Leetcode;
 
-/**
- * @author KHighness
- * @since 2020/11/30
- * @apiNote 817. 链表组件
- */
-
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Problem:
- * 给定链表头结点 head，该链表上的每个结点都有一个 唯一的整型值 。
- * 同时给定列表 G，该列表是上述链表中整型值的一个子集。
- * 返回列表 G 中组件的个数，这里对组件的定义为：链表中一段最长连续结点的值（该值必须在列表 G 中）构成的集合。
+ * @author KHighness
+ * @since 2020-11-30
+ * @apiNote 817. 链表组件
  */
 public class T817 {
 
@@ -26,10 +19,7 @@ public class T817 {
     }
 
     /**
-     * <p>哈希</p>
-     * @param head
-     * @param G
-     * @return
+     * 哈希
      */
     public int numComponents(ListNode head, int[] G) {
         if (head.next == null || G.length == 1) {
@@ -61,8 +51,7 @@ public class T817 {
     }
 
     /**
-     * <p>官解</p>
-     * @return
+     * 官解
      */
     public int officialSolution(ListNode head, int[] G) {
         Set<Integer> Gset = new HashSet<>();

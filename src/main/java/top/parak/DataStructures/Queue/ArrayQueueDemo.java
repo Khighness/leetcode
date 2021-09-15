@@ -4,10 +4,9 @@ import java.util.Scanner;
 
 /**
  * @author KHighness
- * @date 2020/8/27 10:45
+ * @since 2020-08-27
  * @apiNote 数组实现队列
  */
-
 class ArrayQueue {
 
     private int maxSize;  // 队列的最大容量

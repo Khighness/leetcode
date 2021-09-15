@@ -1,18 +1,12 @@
 package top.parak.Leetcode;
 
-/**
- * @author KHighness
- * @date 2020/9/19 20:23
- * @apiNote 3. 无重复字符的最长子串
- */
-
 import java.util.HashMap;
 
 /**
- * Problem:
- * 给定一个字符串，请你找出其中不含有重复字符的 最长子串的长度。
+ * @author KHighness
+ * @since 2020-09-19
+ * @apiNote 3. 无重复字符的最长子串
  */
-
 public class T3 {
 
     public int lengthOfLongestSubstring(String s) {
@@ -37,8 +31,24 @@ public class T3 {
         return max;
     }
 
-    public static void main(String[] args) {
-        System.out.println(new T3().lengthOfLongestSubstring("abba"));
+    public int lengthOfLongestSubstring2(String s) {
+        if (s.length() == 0) return 0;
+        char[] arr = s.toCharArray();
+        HashMap<Character, Integer> map = new HashMap<>();
+        int left = 0, right = 0;
+        int temp = -1;
+        for (int i = 0; i < arr.length; i++) {
+            char c = arr[i];
+            if (map.containsKey(c)) {
+                temp = Math.max(temp, map.get(c));
+            }
+            if (i - temp > right - left) {
+                right = i;
+                left = temp;
+            }
+            map.put(c, i);
+        }
+        return right - left;
     }
 
 }

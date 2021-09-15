@@ -2,16 +2,15 @@ package top.parak.Algorithm.Search;
 
 /**
  * @author KHighness
- * @date 2021/3/11 17:55
+ * @since 2021-03-11
  * @apiNote 插值查找
- */
-
-/**
- * 线性查找能自适应性查找，查找次数小于二分。
- * 对于数据量较大，关键字分布比较哦均匀的查找表来说，采用插值查找，速度较快
  */
 public class InsertSearch {
 
+    /**
+     * 线性查找能自适应性查找，查找次数小于二分。
+     * 对于数据量较大，关键字分布比较均匀的查找表来说，采用插值查找，速度较快
+     */
     public static int search(int[] array, int left, int right, int value) {
         if (left > right || value < array[left] || value > array[right]) {
             throw new RuntimeException("Not Found");

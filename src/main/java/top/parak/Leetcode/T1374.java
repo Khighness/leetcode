@@ -2,14 +2,8 @@ package top.parak.Leetcode;
 
 /**
  * @author KHighness
- * @date 2020/9/29 22:28
+ * @since 2020-09-29
  * @apiNote 1374. 生成每种字符都是奇数个的字符串
- */
-
-/**
- * Problem:
- * 给你一个整数 n，请你返回一个含 n 个字符的字符串，其中每种字符在该字符串中都恰好出现 奇数次。
- * 返回的字符串必须只含小写英文字母。如果存在多个满足题目要求的字符串，则返回其中任意一个即可。
  */
 public class T1374 {
     public String generateTheString(int n) {
@@ -25,7 +19,7 @@ public class T1374 {
             left = 1;
             right = n - 2;
         }
-        StringBuffer ans = new StringBuffer();
+        StringBuilder ans = new StringBuilder();
         for (int i = 0; i < left; i++) {
             ans.append('k');
         }

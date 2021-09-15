@@ -2,10 +2,9 @@ package top.parak.DataStructures.LinkedList;
 
 /**
  * @author KHighness
- * @date 2020/8/27 14:51
+ * @since 2020-08-27
  * @apiNote 单向链表
  */
-
 import java.util.Stack;
 
 /**

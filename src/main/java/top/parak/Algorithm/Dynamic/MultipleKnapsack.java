@@ -3,9 +3,8 @@ package top.parak.Algorithm.Dynamic;
 /**
  * @author KHighness
  * @since 2021-03-17
- * @apiNote [3/9].多重背包问题
+ * @apiNote 多重背包问题
  */
-
 public class MultipleKnapsack {
 
     /**

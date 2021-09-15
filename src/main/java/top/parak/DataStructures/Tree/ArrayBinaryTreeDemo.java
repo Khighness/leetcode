@@ -2,10 +2,9 @@ package top.parak.DataStructures.Tree;
 
 /**
  * @author KHighness
- * @date 2020/10/23 10:23
+ * @since 2020-10-23
  * @apiNote 顺序二叉树
  */
-
 public class ArrayBinaryTreeDemo {
     public static void main(String[] args) {
         int[] array = {1, 2, 3, 4, 5, 6, 7};

@@ -5,13 +5,6 @@ package top.parak.Leetcode;
  * @since 2021-05-21
  * @apiNote 494. 目标和
  */
-
-/**
- * Problem:
- * 给你一个整数数组 nums 和一个整数 target 。
- * 向数组中的每个整数前添加 '+' 或 '-' ，然后串联起所有整数，可以构造一个 表达式 ：
- * 例如，nums = [2, 1] ，可以在 2 之前添加 '+' ，在 1 之前添加 '-' ，然后串联起来得到表达式 "+2-1" 。
- */
 public class T494 {
     public int findTargetSumWays(int[] nums, int target) {
         return dfs(nums, 0, 0, target, 0);
@@ -47,11 +40,37 @@ public class T494 {
         }
         for (int i = 1; i < len; i++) {
             for (int j = 0; j < ran; j++) {
-                int l = (j - nums[i]) >= 0 ? j - nums[i] : 0;
+                int l = Math.max((j - nums[i]), 0);
                 int r = (j + nums[i]) < ran ? j + nums[i] : 0;
                 dp[i][j] = dp[i - 1][l] + dp[i - 1][r];
             }
         }
         return dp[len - 1][sum + target];
+    }
+
+    /**
+     * 动态规划，设+子集为x，-子集为y
+     * (1) x + y == sum
+     * (2) x - y = target
+     * 联立x = (sum + target) / 2
+     * 从而变成寻找x子集问题
+     * 即01背包，选择元素组成x
+     */
+    public int findTargetSumWays3(int[] nums, int target) {
+        int sum = 0;
+        for (int num : nums) {
+            sum += num;
+        }
+        if ((sum + target) % 2 != 0)
+            return 0;
+        int x = (sum + target) / 2;
+        int[] dp = new int[x + 1];
+        dp[0] = 1;
+        for (int num : nums) {
+            for (int i = x; i >= num; i--) {
+                dp[i] = dp[i] + dp[i - num];
+            }
+        }
+        return dp[x];
     }
 }

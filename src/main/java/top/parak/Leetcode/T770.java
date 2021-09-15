@@ -10,10 +10,6 @@ import java.util.List;
  * @since 2021-05-29
  * @apiNote 770. 基本计算器 IV
  */
-
-/**
- * Problem: https://leetcode-cn.com/problems/basic-calculator-iv/
- */
 public class T770 {
 
     /**

@@ -1,17 +1,12 @@
 package top.parak.Leetcode;
 
-/**
- * @author KHighness
- * @since 2021-06-16
- * @apiNote 22. 括号生成
- */
-
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Problem:
- * 数字 n 代表生成括号的对数，请你设计一个函数，用于能够生成所有可能的并且 有效的 括号组合。
+ * @author KHighness
+ * @since 2021-06-16
+ * @apiNote 22. 括号生成
  */
 public class T22 {
 
@@ -50,11 +45,20 @@ public class T22 {
      * DFS
      */
     public List<String> generateParenthesis2(int n) {
-        List<String> cur = new ArrayList<>();
-        return null;
+        List<String> res = new ArrayList<>();
+        dfs("", res, n, 0, 0);
+        return res;
     }
 
-    private void dfs() {
-
+    private void dfs(String cur, List<String> res, int n, int left, int right) {
+        if (left > n || right > left) {
+            return;
+        }
+        if (cur.length() == 2 * n) {
+            res.add(cur);
+            return;
+        }
+        dfs(cur + '(', res, n, left + 1, right);
+        dfs(cur + ')', res, n, left, right + 1);
     }
 }

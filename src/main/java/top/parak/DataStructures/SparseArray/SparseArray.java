@@ -2,26 +2,16 @@ package top.parak.DataStructures.SparseArray;
 
 /**
  * @author KHighness
- * @date 2020/8/26 21:36
+ * @since 2020-08-26
  * @apiNote 稀疏数组
  */
-
-
-/**
- * 二维数组->稀疏数组
- * 1、遍历原始的二维数组，得到有效数据的个数sum
- * 2、根据sum就可以创建稀疏数组SparseArrry[sum+1][3]
- * 3、将二维数组的有效数据存入到稀疏数组
- */
-
-/**
- * 稀疏数组->原始数组
- * 1、先读取稀疏数组的第一行，根据第一行的数据，创建原始二维数组
- * 2、再读取稀疏数组后几行的数据，并赋值给原始的二维数组
- */
-
 public class SparseArray {
 
+    /**
+     * 稀疏数组->原始数组
+     * 1、先读取稀疏数组的第一行，根据第一行的数据，创建原始二维数组
+     * 2、再读取稀疏数组后几行的数据，并赋值给原始的二维数组
+     */
     public static void main(String[] args) {
 
         // 创建原始的二维数组
@@ -37,9 +27,7 @@ public class SparseArray {
             System.out.println();
         }
 
-        /**
-         * 压缩数组
-         */
+        /* 压缩数组 */
 
         // 获取有效数据数量
         int sum = 0;
@@ -75,9 +63,7 @@ public class SparseArray {
             System.out.printf("%d\t%d\t%d\t\n", sparseArray[i][0], sparseArray[i][1], sparseArray[1][2]);
         }
 
-        /**
-         * 还原数组
-         */
+        /* 还原数组 */
 
         // 创建还原数组
         int array2[][] = new int[sparseArray[0][0]][sparseArray[0][1]];

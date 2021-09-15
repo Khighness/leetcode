@@ -2,10 +2,9 @@ package top.parak.Algorithm.Game;
 
 /**
  * @author KHighness
- * @date 2020/10/3 1:18
+ * @since 2020-10-03
  * @apiNote 巴什博弈
  */
-
 public class BashGame {
     public void play(int n, int m) {
         if ((n % (m + 1)) == 0) {

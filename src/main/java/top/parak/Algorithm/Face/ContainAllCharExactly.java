@@ -8,7 +8,6 @@ import java.util.Arrays;
  * @apiNote 给定字符串aim，在str中找到一个与aim长度相同，包含字符种类和数量相同的字符串，
  * 返回任意满足条件的一个子串的起始位置，未找到返回-1。
  */
-
 public class ContainAllCharExactly {
 
     /**

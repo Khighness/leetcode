@@ -6,12 +6,6 @@ package top.parak.Leetcode;
  * @apiNote 剑指 Offer 68 - II. 二叉树的最近公共祖先
  */
 
-import java.util.UUID;
-
-/**
- * Problem:
- * 给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。
- */
 public class Offer68_2 {
     // Definition for a binary tree node.
     class TreeNode {
@@ -41,4 +35,5 @@ public class Offer68_2 {
         // p、q在子树同侧
         return (left != null) ? left : right;
     }
+
 }

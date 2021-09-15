@@ -8,7 +8,6 @@ import java.util.Set;
  * @author KHighness
  * @since 2021-05-26
  */
-
 public class T1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

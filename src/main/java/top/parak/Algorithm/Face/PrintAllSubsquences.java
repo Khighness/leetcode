@@ -5,10 +5,9 @@ import java.util.Set;
 
 /**
  * @author KHighness
- * @since 2021/3/15
+ * @since 2021-03-15
  * @apiNote 打印一个字符串的全部子序列，不包含重复子序列。
  */
-
 public class PrintAllSubsquences {
 
     public Set<String> sub(String s) {
@@ -31,6 +30,10 @@ public class PrintAllSubsquences {
         process(str, index + 1, set, no);
         String yes = path + str[index];
         process(str, index + 1, set, yes);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new PrintAllSubsquences().sub("abcd"));
     }
 
 }

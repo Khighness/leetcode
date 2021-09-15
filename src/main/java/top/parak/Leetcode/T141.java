@@ -2,15 +2,8 @@ package top.parak.Leetcode;
 
 /**
  * @author KHighness
- * @since 2020/11/30
+ * @since 2020-11-30
  * @apiNote 141. 环形链表
- */
-
-/**
- * Problem:
- * 给定一个链表，判断链表中是否有环。
- * 如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表中存在环。 为了表示给定链表中的环，我们使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。 如果 pos 是 -1，则在该链表中没有环。注意：pos 不作为参数进行传递，仅仅是为了标识链表的实际情况。
- * 如果链表中存在环，则返回 true 。 否则，返回 false 。
  */
 public class T141 {
 
@@ -52,8 +45,10 @@ public class T141 {
      * 此时让fast指向head，slot指向fast，fast的速度和slot一致，
      * fast从head走到A，距离为x，同时slot走了x = (n + 1)l - y，正好到达A点，两者相遇，
      * 所走的距离即为句柄的长度。
+     *
+     * @return 数组，环的长度和柄的长度
      */
-    public int[] lengthOfCycle(ListNode head) {
+    public int[] cycle(ListNode head) {
         if (head == null || head.next == null) {
             return new int[]{0, 0};
         }
@@ -106,8 +101,7 @@ public class T141 {
         node6.next = node7;
         node7.next = node8;
         node8.next = node3;
-        int[] length = new T141().lengthOfCycle(node1);
+        int[] length = new T141().cycle(node1);
         System.out.println(length[0] + " " + length[1]);
     }
-
 }

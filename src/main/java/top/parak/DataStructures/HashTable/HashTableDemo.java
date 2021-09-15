@@ -4,10 +4,9 @@ import java.util.Scanner;
 
 /**
  * @author KHighness
- * @date 2020/9/12 20:58
+ * @since 2020-09-12
  * @apiNote 散列表
  */
-
 class HashTable {
     private int size;
     private EmpLinkedList[] empLinkedListArray;

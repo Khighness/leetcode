@@ -8,7 +8,6 @@ import java.util.Scanner;
  * @author KHighness
  * @since 2021-05-27
  */
-
 public class T2 {
 //    public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);

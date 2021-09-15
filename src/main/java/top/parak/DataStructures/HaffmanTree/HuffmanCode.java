@@ -5,37 +5,37 @@ import java.util.*;
 
 /**
  * @author KHighness
- * @date 2021/3/13 11:29
+ * @since 2021-03-13
  * @apiNote 哈夫曼编码
  */
-
-class TreeNode implements Comparable<TreeNode> {
-    /* ascii */
-    Byte data;
-    /* 权值 */
-    Integer weight;
-    /* 左子 */
-    TreeNode left;
-    /* 右子 */
-    TreeNode right;
-
-    public TreeNode(Byte data, int weight) {
-        this.data = data;
-        this.weight = weight;
-    }
-
-    @Override
-    public String toString() {
-        return "[data=" + data + ", weight = " + weight + "]";
-    }
-
-    @Override
-    public int compareTo(TreeNode o) {
-        return this.weight - o.weight;
-    }
-}
-
 public class HuffmanCode {
+
+    static class TreeNode implements Comparable<TreeNode> {
+        /* ascii */
+        Byte data;
+        /* 权值 */
+        Integer weight;
+        /* 左子 */
+        TreeNode left;
+        /* 右子 */
+        TreeNode right;
+
+        public TreeNode(Byte data, int weight) {
+            this.data = data;
+            this.weight = weight;
+        }
+
+        @Override
+        public String toString() {
+            return "[data=" + data + ", weight = " + weight + "]";
+        }
+
+        @Override
+        public int compareTo(TreeNode o) {
+            return this.weight - o.weight;
+        }
+    }
+
     /* 哈夫曼编码表 */
     static Map<Byte, String> huffmanCodes = new HashMap<>();
 
@@ -246,9 +246,15 @@ public class HuffmanCode {
             System.out.println(e.getMessage());
         } finally {
             try {
-                input.close();
-                output.close();
-                objectOutput.close();
+                if (input != null) {
+                    input.close();
+                }
+                if (output != null) {
+                    output.close();
+                }
+                if (objectOutput != null) {
+                    objectOutput.close();
+                }
             } catch (IOException e) {
                 System.out.println(e.getMessage());
             }
@@ -278,9 +284,15 @@ public class HuffmanCode {
             System.out.println(e.getMessage());
         } finally {
             try {
-                output.close();
-                objectInput.close();
-                input.close();
+                if (output != null) {
+                    output.close();
+                }
+                if (objectInput != null) {
+                    objectInput.close();
+                }
+                if (input != null) {
+                    input.close();
+                }
             } catch (IOException e) {
                 System.out.println(e.getMessage());
             }
@@ -289,13 +301,13 @@ public class HuffmanCode {
 
     public static void main(String[] args) throws IOException {
         // 测试压缩与解压字符串
-//        String str = "i like like like java do you like a java";
-//        byte[] content = str.getBytes();
-//        byte[] compress = huffmanCompress(content);
-//        byte[] decompress = decompressCode(compress, huffmanCodes);
-//        System.out.println(new String(decompress));
-//         // 测试压缩与解压文件
-//        compressFile("C:/Users/18236/Desktop/K.png", "C:/Users/18236/Desktop/K-ZIP.zip");
-//        decompressFile("C:/Users/18236/Desktop/K-ZIP.zip", "C:/Users/18236/Desktop/K-UNZIP.png");
+        String str = "i like like like java do you like a java";
+        byte[] content = str.getBytes();
+        byte[] compress = huffmanCompress(content);
+        byte[] decompress = decompressCode(compress, huffmanCodes);
+        System.out.println(new String(decompress));
+         // 测试压缩与解压文件
+         compressFile("C:/Users/18236/Desktop/K.jpg", "C:/Users/18236/Desktop/K-ZIP.zip");
+         decompressFile("C:/Users/18236/Desktop/K-ZIP.zip", "C:/Users/18236/Desktop/K-UNZIP.png");
     }
 }

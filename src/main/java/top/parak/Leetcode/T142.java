@@ -3,8 +3,8 @@ package top.parak.Leetcode;
 /**
  * @author KHighness
  * @since 2021-05-17
+ * @apiNote 142. 环形链表 II
  */
-
 public class T142 {
 
     // Definition for singly-linked list.

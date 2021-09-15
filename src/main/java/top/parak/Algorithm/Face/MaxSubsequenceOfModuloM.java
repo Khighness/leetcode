@@ -9,9 +9,7 @@ import java.util.TreeSet;
  * @since 2021-03-27
  * @apiNote 给定一个非负数组array和一个整数m，返回array的所有子序列中累加和%m之后的最大值
  */
-
 public class MaxSubsequenceOfModuloM {
-
     /**
      * 暴力计算所有子序列的总和
      */

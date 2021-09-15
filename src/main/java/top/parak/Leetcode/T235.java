@@ -1,23 +1,12 @@
 package top.parak.Leetcode;
 
-/**
- * @author KHighness
- * @since 2020/11/9
- * @apiNote 235. 二叉搜索树的最近公共祖先
- */
-
-/**
- * Problem:
- * 给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。
- */
-
-import javax.swing.tree.TreeNode;
 import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Solution:
- * 二叉搜索树，可以通过寻找根结点到两个结点的路径中，寻找两个路径的最远共同结点
+ * @author KHighness
+ * @since 2020-11-09
+ * @apiNote 235. 二叉搜索树的最近公共祖先
  */
 public class T235 {
 

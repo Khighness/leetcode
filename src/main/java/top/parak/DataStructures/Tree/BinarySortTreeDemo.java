@@ -2,10 +2,9 @@ package top.parak.DataStructures.Tree;
 
 /**
  * @author KHighness
- * @date 2021/3/13 20:17
+ * @since 2021-03-13
  * @apiNote 二叉排序树
  */
-
 class TreeNode {
     int value;
     TreeNode left;

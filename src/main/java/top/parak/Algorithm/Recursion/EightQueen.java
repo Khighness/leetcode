@@ -2,10 +2,9 @@ package top.parak.Algorithm.Recursion;
 
 /**
  * @author KHighness
- * @date 2020/8/29 10:06
+ * @since 2020-08-29
  * @apiNote 八皇后
  */
-
 public class EightQueen {
 
     public static void main(String[] args) {
@@ -48,8 +47,9 @@ public class EightQueen {
 
     /**
      * 检测是否冲突
+     *
      * @param n 第n个皇后
-     * @return
+     * @return true没有冲突，false有冲突
      */
     private boolean checkPlace(int n) {
         for (int i = 0; i < n; i++) {

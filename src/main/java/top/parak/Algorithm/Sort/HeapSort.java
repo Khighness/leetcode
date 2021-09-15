@@ -4,13 +4,8 @@ import java.util.Arrays;
 
 /**
  * @author KHighness
- * @date 2021/3/12 12:22
+ * @since 2021-03-12
  * @apiNote 堆排序
- */
-
-/**
- * 升序：大根堆
- * 降序：小根堆
  */
 public class HeapSort {
 
@@ -32,9 +27,7 @@ public class HeapSort {
         // 重新调整结构，使其满足堆定义，然后继续通常交换堆顶元素与当前末尾元素
         // 反复执行调整+交换步骤，直到整个序列有序。
         for (int j = array.length - 1; j >= 0; j--) {
-            int temp = array[j];
-            array[j] = array[0];
-            array[0] = temp;
+            swap(array, 0, j);
             adjustHeap(array, 0, j);
         }
     }
@@ -46,7 +39,7 @@ public class HeapSort {
      * @param i      表示非叶子结点在数组中的索引
      * @param length 表示对多少个元素进行调整，length逐渐减少
      */
-    public static void adjustHeap(int[] array, int i, int length) {
+    private static void adjustHeap(int[] array, int i, int length) {
         // 取出当前元素值
         int temp = array[i];
         // 开始调整，k= i * 2 + 1是i结点的左子结点
@@ -64,6 +57,12 @@ public class HeapSort {
         }
         // 循环结束之后，将temp值放到调整后的位置
         array[i] = temp;
+    }
+
+    private static void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 
     private static void test(int n) {

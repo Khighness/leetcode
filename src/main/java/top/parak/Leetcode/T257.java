@@ -5,13 +5,8 @@ import java.util.List;
 
 /**
  * @author KHighness
- * @since 2020/11/10
+ * @since 2020-11-10
  * @apiNote 257. 二叉树的所有路径
- */
-
-/**
- * Problem:
- * 给定一个二叉树，返回所有从根节点到叶子节点的路径。
  */
 public class T257 {
 

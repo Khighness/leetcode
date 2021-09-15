@@ -1,14 +1,9 @@
 package top.parak.Leetcode;
 
 /**
- * @author: KHighness
- * @date: 2020/9/23 12:35
- * @apiNote: 237. 删除链表中的节点
- */
-
-/**
- * Problem:
- * 请编写一个函数，使其可以删除某个链表中给定的（非末尾）节点。传入函数的唯一参数为要被删除的节点 。
+ * @author KHighness
+ * @since 2020-09-23
+ * @apiNote 237. 删除链表中的节点
  */
 public class T237 {
 

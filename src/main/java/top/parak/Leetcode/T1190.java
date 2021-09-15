@@ -1,20 +1,15 @@
 package top.parak.Leetcode;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 /**
  * @author KHighness
  * @since 2021-05-26
  * @apiNote 1190. 反转每对括号间的子串
  */
-
-import java.util.ArrayDeque;
-import java.util.Deque;
-
-/**
- * Problem:
- *给出一个字符串 s（仅含有小写英文字母和括号）。
- * 请你按照从括号内到外的顺序，逐层反转每对匹配括号中的字符串，并返回最终的结果。
- */
 public class T1190 {
+
     /**
      * 双向队列
      * 从前往后遍历字符串，将不是『(』的字符串放入队列尾部
@@ -49,4 +44,5 @@ public class T1190 {
         while (!deque.isEmpty()) res.append(deque.pollFirst());
         return res.toString();
     }
+
 }

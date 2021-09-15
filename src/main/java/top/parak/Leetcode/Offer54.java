@@ -1,20 +1,11 @@
 package top.parak.Leetcode;
 
+import java.util.Stack;
+
 /**
  * @author KHighness
  * @since 2021-05-10
  * @apiNote 剑指 Offer 54. 二叉搜索树的第k大节点
- */
-
-import javax.swing.tree.TreeNode;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Stack;
-
-/**
- * Problem:
- * 给定一棵二叉搜索树，请找出其中第k大的节点。
  */
 public class Offer54 {
     // Definition for a binary tree node.
@@ -24,7 +15,6 @@ public class Offer54 {
         TreeNode right;
         TreeNode(int x) { val = x; }
     }
-
 
     public int kthLargest(TreeNode root, int k) {
         if (root == null) return -1;

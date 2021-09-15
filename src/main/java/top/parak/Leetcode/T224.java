@@ -10,7 +10,6 @@ import java.util.Stack;
  * @since 2021-05-29
  * @apiNote 224. 基本计算器
  */
-
 public class T224 {
     /** 优先级 */
     private HashMap<Character, Integer> priorityMap = new HashMap<Character, Integer>() {{
@@ -72,9 +71,5 @@ public class T224 {
             case '^': ans = num1 ^ num2; break;
         }
         numberStack.addLast(ans);
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new T224().process("(1 + 32) * 3 / 9"));
     }
 }

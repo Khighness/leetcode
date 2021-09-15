@@ -1,17 +1,10 @@
 package top.parak.Leetcode;
 
 /**
- * <p> Project: Algorithm </P>
- * <p> Package: top.parak.Leetcode </p>
- * <p> FileName: T160 <p>
- * <p> Description: <p>
- * <p> Created By IntelliJ IDEA </p>
- *
  * @author KHighness
- * @since 2020/12/1
+ * @since 2020-12-01
  * @apiNote 160. 相交链表
  */
-
 public class T160 {
 
     // Definition for singly-linked list.

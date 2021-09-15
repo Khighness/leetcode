@@ -1,22 +1,9 @@
 package top.parak.Leetcode;
 
 /**
- * <p> Project: Algorithm </P>
- * <p> Package: top.parak.Leetcode </p>
- * <p> FileName: T23 <p>
- * <p> Description: <p>
- * <p> Created By IntelliJ IDEA </p>
- *
  * @author KHighness
- * @since 2020/12/1
+ * @since 2020-12-01
  * @apiNote 23. 合并K个升序链表
- */
-
-
-/**
- * Problem:
- * 给你一个链表数组，每个链表都已经按升序排列。
- * 请你将所有链表合并到一个升序链表中，返回合并后的链表。
  */
 public class T23 {
 

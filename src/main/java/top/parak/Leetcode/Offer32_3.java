@@ -1,17 +1,11 @@
 package top.parak.Leetcode;
 
+import java.util.*;
+
 /**
  * @author KHighness
  * @since 2021-04-28
  * @apiNote 剑指 Offer 32 - II. 从上到下打印二叉树 II
- */
-
-import javax.swing.tree.TreeNode;
-import java.util.*;
-
-/**
- * Problem:
- * 请实现一个函数按照之字形顺序打印二叉树，即第一行按照从左到右的顺序打印，第二层按照从右到左的顺序打印，第三行再按照从左到右的顺序打印，其他行以此类推。
  */
 public class Offer32_3 {
 

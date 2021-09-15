@@ -1,13 +1,10 @@
 package top.parak.Algorithm.Dynamic;
 
-import java.util.Scanner;
-
 /**
  * @author KHighness
  * @since 2021-03-17
- * @apiNote [2/9].完全背包
+ * @apiNote 完全背包
  */
-
 public class CompleteKnapsack {
 
     /**
@@ -32,18 +29,4 @@ public class CompleteKnapsack {
         return dp[capacity];
     }
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int types = scanner.nextInt();
-        int capacity = scanner.nextInt();
-        int[] weight = new int[types + 1];
-        int[] value = new int[types + 1];
-        for (int i = 1; i <= types; i++) {
-            weight[i] = scanner.nextInt();
-            value[i] = scanner.nextInt();
-        }
-        ZeroOneKnapsack zeroOneKnapsack = new ZeroOneKnapsack();
-        int ans = zeroOneKnapsack.solution2(capacity, types, weight, value);
-        System.out.println(ans);
-    }
 }

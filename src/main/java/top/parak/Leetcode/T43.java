@@ -5,11 +5,6 @@ package top.parak.Leetcode;
  * @since 2021-06-16
  * @apiNote 43. 字符串相乘
  */
-
-/**
- * Problem:
- * 给定两个以字符串形式表示的非负整数 num1 和 num2，返回 num1 和 num2 的乘积，它们的乘积也表示为字符串形式。
- */
 public class T43 {
     public String multiply(String num1, String num2) {
         if (num1.equals("0") || num2.equals("0"))

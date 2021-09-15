@@ -1,15 +1,11 @@
 package top.parak.Algorithm.Sort;
 
-import java.util.Arrays;
-
 /**
  * @author KHighness
- * @date 2020/8/29 15:07
+ * @since 2020-08-29
  * @apiNote 冒泡排序
  */
-
 public class BubbleSort {
-
 
     /**
      * 分析：

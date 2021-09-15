@@ -1,21 +1,13 @@
 package top.parak.Algorithm.Face;
 
-/**
- * @author KHighness
- * @since 2021-03-16
- * @apiNote 后序遍历结果还原二叉搜索树，并返回根节点
- */
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
 /**
- * posArr=[L1, L2... Ln, R1, R2...Rn, Root]
- * 以上为后序遍历（左右中）结果
- * 最后一个元素为根节点Root
- * [L1-Ln]为左子树，都小于Root
- * [R1-Rn]为右子树，都大于Root
+ * @author KHighness
+ * @since 2021-03-16
+ * @apiNote 后序遍历结果还原二叉搜索树，并返回根节点
  */
 public class PosArrayToBST {
 
@@ -33,6 +25,13 @@ public class PosArrayToBST {
         return process1(posArr, 0, posArr.length - 1);
     }
 
+    /**
+     * posArr=[L1, L2... Ln, R1, R2...Rn, Root]
+     * 以上为后序遍历（左右中）结果
+     * 最后一个元素为根节点Root
+     * [L1-Ln]为左子树，都小于Root
+     * [R1-Rn]为右子树，都大于Root
+     */
     public Node process1(int[] posArr, int L, int R) {
         if (L > R) {
             return null;

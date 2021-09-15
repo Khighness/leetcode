@@ -1,20 +1,14 @@
 package top.parak.Leetcode;
 
-/**
- * @author KHighness
- * @since 2021-05-09
- * @apiNote 827. 最大人工岛
- */
-
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
 /**
- * Problem:
- * 在二维地图上， 0代表海洋， 1代表陆地，我们最多只能将一格 0 海洋变成 1变成陆地。
- * 进行填海之后，地图上最大的岛屿面积是多少？（上、下、左、右四个方向相连的 1 可形成岛屿）
+ * @author KHighness
+ * @since 2021-05-09
+ * @apiNote 827. 最大人工岛
  */
 public class T827 {
 

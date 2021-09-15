@@ -4,15 +4,13 @@ import java.util.Arrays;
 
 /**
  * @author KHighness
- * @date 2020/8/29 18:15
+ * @since 2020-08-29
  * @apiNote 希尔排序
  */
-
 public class ShellSort {
 
     /**
      * 冒泡法
-     * @param array
      */
     public static void swapSort(int[] array) {
         int temp = 0;
@@ -31,7 +29,6 @@ public class ShellSort {
 
     /**
      * 插入法
-     * @param array
      */
     public static void insertSort(int[] array) {
         for (int gap = array.length / 2; gap >= 1; gap /= 2) {

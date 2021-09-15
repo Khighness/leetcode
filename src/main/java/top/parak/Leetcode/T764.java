@@ -5,17 +5,8 @@ package top.parak.Leetcode;
  * @since 2021-05-27
  * @apiNote 764. 最大加号标志
  */
-
-import java.util.Arrays;
-
-/**
- * Problem:
- *在一个大小在 (0, 0) 到 (N-1, N-1) 的2D网格 grid 中，除了在 mines 中给出的单元为 0，其他每个单元都是 1。
- * 网格中包含 1 的最大的轴对齐加号标志是多少阶？返回加号标志的阶数。如果未找到加号标志，则返回 0。
- * 一个 k" 阶由 1 组成的“轴对称”加号标志具有中心网格  grid[x][y] = 1 ，以及4个从中心向上、向下、向左、向右延伸，长度为 k-1，由 1 组成的臂。
- * 下面给出 k" 阶“轴对称”加号标志的示例。注意，只有加号标志的所有网格要求为 1，别的网格可能为 0 也可能为 1。
- */
 public class T764 {
+
     /**
      * DP
      * dp[i][j][k](k=0,1,2,3)表示(i, j)在左,上,右,下四个方向上的臂长
@@ -63,10 +54,6 @@ public class T764 {
 
     private int min(int a, int b, int c, int d) {
         return Math.min(a, Math.min(b, Math.min(c, d)));
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new T764().orderOfLargestPlusSign(2, new int[][]{{0, 1}, {1, 0}, {1, 1}}));
     }
 
 }

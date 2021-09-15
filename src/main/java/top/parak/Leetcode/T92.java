@@ -5,14 +5,6 @@ package top.parak.Leetcode;
  * @since 2021-05-11
  * @apiNote 92. 反转链表 II
  */
-
-import java.util.Map;
-
-/**
- * Problem:
- * 给你单链表的头指针 head 和两个整数 left 和 right ，其中 left <= right 。
- * 请你反转从位置 left 到位置 right 的链表节点，返回 反转后的链表 。
- */
 public class T92 {
 
     // Definition for singly-linked list.
@@ -45,24 +37,6 @@ public class T92 {
             prevNode.next = next;
         }
         return dummyHead.next;
-    }
-
-    public static void main(String[] args) {
-        ListNode node1 = new ListNode(1);
-        ListNode node2 = new ListNode(2);
-        ListNode node3 = new ListNode(3);
-        ListNode node4 = new ListNode(4);
-        ListNode node5 = new ListNode(5);
-        node1.next = node2;
-        node2.next = node3;
-        node3.next = node4;
-        node4.next = node5;
-        T92 t92 = new T92();
-        ListNode curr = t92.reverseBetween(node1, 1, 4);
-        while (curr != null) {
-            System.out.println(curr.val);
-            curr = curr.next;
-        }
     }
 
 }

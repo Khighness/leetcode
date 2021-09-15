@@ -5,8 +5,8 @@ package top.parak.Leetcode;
  * @since 2021-06-16
  * @apiNote 1138. 字母板上的路径
  */
-
 public class T1138 {
+
     public String alphabetBoardPath(String target) {
         // 当前坐标
         int x = 0, y = 0;
@@ -37,4 +37,5 @@ public class T1138 {
         }
         return builder.toString();
     }
+
 }

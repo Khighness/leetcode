@@ -2,10 +2,9 @@ package top.parak.Algorithm.Search;
 
 /**
  * @author KHighness
- * @date 2021/3/11 16:25
+ * @since 2021-03-11
  * @apiNote 线性查找
  */
-
 public class SeqSearch {
 
     public static int search(int[] array, int value) {

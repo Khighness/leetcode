@@ -5,13 +5,6 @@ package top.parak.Leetcode;
  * @since 2021-05-15
  * @apiNote 105. 从前序与中序遍历序列构造二叉树
  */
-
-/**
- * Problem:
- * 根据一棵树的前序遍历与中序遍历构造二叉树。
- * 注意:
- * 你可以假设树中没有重复的元素。
- */
 public class T105 {
 
     // Definition for a binary tree node.
